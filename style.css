@@ -1,0 +1,60 @@
+svg{
+    border:1px solid#ccc;
+}
+
+.axis .tick line{
+    stroke: rgb(134, 183, 197);
+    stroke-width:  0.5 px;
+    stroke-dasharray:2;
+}
+/*軸線的顏色*/
+.axis .domain{
+    stroke-width:1 px;
+    stroke:rgb(0, 0, 0);
+    
+}
+
+.xline{
+    stroke:white;
+}
+
+svg,.selected-container{
+    border:1px solid#ccc;
+}
+
+body{
+    display:flex;
+}
+    
+.selected-container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+}
+
+.selected-header{
+    background:#f0f0f0;
+    color:#777;
+    padding:0.5rem 2rem;
+    text-align:right;
+}
+
+.selected-body{
+    overflow:auto;
+    font-size:1em;
+    cursor:default;
+}
+
+.selected-title{
+    font-weight:bold;
+}
+
+.selected-element{
+    margin:0.5em;
+    padding:0.5em;
+    transition:background-color 200ms ease;
+}
+
+.selected-element:hover{
+    background-color:#f0f0f0;
+}
